@@ -34,6 +34,7 @@ window.addEventListener('load', () =>{
         
             if (item.isIntersecting) {
                 // Show the annotation when intersecting and stop observing after it.
+                annotation.show();
                 observer.unobserve(item.target);
 
             } else {
